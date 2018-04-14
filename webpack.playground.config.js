@@ -14,7 +14,7 @@ var webpackPlaygroundMerge = webpackMerge(mergeStrategy);
 module.exports = webpackPlaygroundMerge(webDev, {
   "entry": {
     "main": [
-      "./src/main.playground.ts"
+      "./src\\main.playground.ts"
     ]
   }
 });

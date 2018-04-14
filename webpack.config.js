@@ -145,7 +145,7 @@ module.exports = {
   },
   "entry": {
     "main": [
-      "./src\\main.playground.ts"
+      "./src\\main.ts"
     ],
     "polyfills": [
       "./src\\polyfills.ts"
