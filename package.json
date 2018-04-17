@@ -11,7 +11,7 @@
     "e2e": "protractor ./protractor.conf.js",
     "playground": "concurrently \"npm run playground:run\" \"npm run playground:serve\"",
     "playground:run": "angular-playground --no-serve",
-    "playground:serve": "webpack-dev-server --port=4201",
+    "playground:serve": "webpack-dev-server --port=4201 --config webpack.playground.config.js",
     "pree2e": "webdriver-manager update --standalone false --gecko false --quiet"
   },
   "private": true,
@@ -38,10 +38,11 @@
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
-    "angular-playground": "^3.4.0",
+    "angular-playground": "^4.0.0",
     "autoprefixer": "^7.2.3",
     "circular-dependency-plugin": "^4.2.1",
     "codelyzer": "^4.0.1",
+    "concurrently": "^3.5.1",
     "copy-webpack-plugin": "~4.4.1",
     "file-loader": "^1.1.5",
     "html-webpack-plugin": "^2.29.0",
@@ -68,6 +69,7 @@
     "uglifyjs-webpack-plugin": "^1.1.8",
     "url-loader": "^0.6.2",
     "webpack": "~3.11.0",
-    "webpack-dev-server": "~2.11.0"
+    "webpack-dev-server": "~2.11.0",
+    "webpack-merge": "^4.1.2"
   }
 }
